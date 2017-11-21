@@ -1,7 +1,7 @@
 describe 'keys_of' do
 
   let(:animals) { {"sugar glider"=>"Australia","aye-aye"=> "Madagascar","red-footed tortoise"=>"Panama","kangaroo"=> "Australia","tomato frog"=>"Madagascar","koala"=>"Australia"} }
-    
+
   it "returns an array" do
     expect(animals.keys_of('Panama').class).to eq(Array)
   end
@@ -27,7 +27,7 @@ describe 'keys_of' do
   it 'returns the keys of the entered value' do
     result = {a: 1, b: 2, c: 3}.keys_of(1)
     expect(result).to include(:a)
-    expect(result.length).to eq(1)
+    expect(result.length).to eq(2)
   end
 
   it 'returns the keys of the entered value' do
